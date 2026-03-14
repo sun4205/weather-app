@@ -7,5 +7,6 @@ export async function fetchWeather(city: string): Promise<weatherData> {
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=imperial`
   );
   const data = await res.json();
+  console.log(data);
   return data;
 }
