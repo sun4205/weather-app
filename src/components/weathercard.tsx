@@ -4,7 +4,7 @@ interface Props {
   weather: weatherData;
 }
 
-function weatherCard({ weather }: Props) {
+function WeatherCard({ weather }: Props) {
   return (
     <div>
       <h2>{weather.name}</h2>
@@ -14,4 +14,4 @@ function weatherCard({ weather }: Props) {
     </div>
   );
 }
-export default weatherCard;
+export default WeatherCard;
