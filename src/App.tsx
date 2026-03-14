@@ -16,7 +16,6 @@ function App() {
     <div id="app">
       <h1>Weather App</h1>
 
-      {/* input + button만 가로로 */}
       <div className="search-container">
         <input
           value={city}
@@ -26,7 +25,6 @@ function App() {
         <button onClick={handleSearch}>Search</button>
       </div>
 
-      {/* 날씨 카드 */}
       {weather && <WeatherCard weather={weather} />}
     </div>
   );
